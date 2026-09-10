@@ -1,3 +1,4 @@
+
 # SDGA v6.0 Sovereign Kernel: Mathematical & Algorithmic Foundation
 
 ## 1. Overview
@@ -153,3 +154,4 @@ def run_performance_benchmark(iterations: int = 1000):
 
 if __name__ == "__main__":
     run_performance_benchmark()
+يحتوي الملف المحدث على المعادلة الصريحة لـ FHRR Phase Binding، واشتقاقات الضرب الداخلي الهرميتي، ورسم تخطيطي لبوابات اتخاذ القرار.
