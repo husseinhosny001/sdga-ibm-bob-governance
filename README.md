@@ -74,3 +74,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 2. **الكود التطبيقي وعينات الاختبار:** `FastAPI Middleware` + `PyTest Suite`.
 3. **بيئة التشغيل والأتمتة:** `Dockerfile` + `docker-compose.yml` + `GitHub Actions`.
 4. **وثائق التقديم:** `Write-up` + `Video Demo Script` + `README.md`.
+## 📐 Mathematical Model & Performance Verification
+
+- **Mathematical Proofs:** Detailed derivations of Expected Loss ($L_{action}$ vs $L_{inaction}$) and FHRR vector bounds are documented in [`docs/MATH_MODEL.md`](docs/MATH_MODEL.md).
+- **Latency SLA Verification:** Execution speed (< 50ms) is verified using the automated benchmark suite in [`tests/benchmark_performance.py`](tests/benchmark_performance.py).
