@@ -65,3 +65,7 @@ class SDGAExpectedLossEngine:
             "decision": decision,
             "execution_permitted": permitted
         }
+تم دمج العمليات الرياضية الحقيقية لتمثيل متجهات الطور المركبة (Complex Phase Vectors) في الفضاء D=10,000:
+بناء متجهات الطور (z_k = e^{j \phi_k}): تحويل خصائص تغييرات الكود إلى زوايا طور \phi_k \in [-\pi, \pi] في الفضاء D=10,000.
+حساب استقرار الطور (S_{\text{FHRR}}): استخدام الضرب الداخلي الهرميتي المنظم (\frac{1}{D} \vert{}\langle \mathbf{z}_{\text{base}}, \mathbf{z}_{\text{proposal}} \rangle\vert{}) لقياس درجة انحراف التعديل عن الحالة الآمنة المرجعية.
+دمج الاستقرار في دالة الخسارة: تعديل احتمال النجاح المباشر ليصبح P_{\text{success}} = \text{clip}(0.70 \cdot P_{\text{raw}} + 0.30 \cdot S_{\text{FHRR}}, 0.01, 0.99).
