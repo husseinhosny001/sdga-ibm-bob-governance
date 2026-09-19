@@ -27,3 +27,9 @@ jobs:
     - name: Verify SDGA Kernel Imports
       run: |
         python -c "from sdga_kernel.expected_loss import SDGAExpectedLossEngine; print('SDGA v6.0 Kernel Loaded Successfully')"
+env
+- name: Run PyTest Suite
+  env:
+    PYTHONPATH: .
+  run: |
+    pytest
