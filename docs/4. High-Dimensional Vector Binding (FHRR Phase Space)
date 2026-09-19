@@ -7,8 +7,6 @@ Phase stability and similarity bounds are governed by N_{max} \le 134 independen
 
 ### **2. سكريبت قياس الأداء العملي (`tests/benchmark_performance.py`)**
 
-قم بإنشاء هذا الملف في المسار `tests/benchmark_performance.py` لإثبات سرعة الاستجابة عملياً:
-
 ```python
 import time
 import statistics
