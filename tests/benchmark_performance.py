@@ -31,3 +31,8 @@ def run_performance_benchmark(iterations: int = 1000):
 
 if __name__ == "__main__":
     run_performance_benchmark()
+- name: Run CI Tests & Governance Engine
+  env:
+    PYTHONPATH: .
+  run: |
+    python -c "import sdga_kernel.expected_loss"
